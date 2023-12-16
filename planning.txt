@@ -1,0 +1,20 @@
+
+Learn about Epic, Cerner and maybe a few other EMR systems, their main workflows and apps/forms/sites.  Understand some of the EMR ecosystem tech and where its going.
+Learn about JHipster and PyHipster, mess around with them trying to spin up application using them.  
+If I can get working, will have front end in some form of JS with HTML/CSS, REST services, and either Spring or Flask backend.  Should be a decent start to build on.
+I need to create phased development plans, the idea is too big to tackle in one sprint or phase.  Plan it like a project and pick an MVP for phase 1.
+MVP idea:  Web app mocking an encounter and specific diagnosis can be seleted.  Services to call ML model and get predictions for treatments. DB to serve up data and store it.
+Probalby want MySQL or PostgreSQL DB, as those can be spun up by the hipsters it seems.
+Need to learn FHIR standards and about their APIs and dummy data.  Then work on building out the data model the app will need.  
+Make DFD and ERD for zcw check in.
+Diagram the basic system architecture - front-end, applications and data tiers.  Thinking..
+front-end is react or angular or straight JS, HTML and CSS.  Look for templates for HTML and CSS, maybe FHIR has some or internet.
+applications - backend web app (Flask or Spring), hosted ML model, maybe spark app
+data - mysql or postgresql db for app data and ml model data and analytics maybe, maybe some kafka topics for analytics, would spark app go here instead? 
+
+Going to need to review SQL, Python, Java, HTML, and learn some CSS and JavaScript.
+Learn more about PySpark and Kafka, do some more complicated projects/labs to get better.
+Should brush up on using Postman to explore FHIR and any Epic, Cerner APIs available.
+Consult with TJ about EMRs and if any of this make senses or is parallel to what is actually being done in the health care IT world.  Get feedback and improve.
+Going to need to learn to use JHipster and PyHipster
+Figure out where and how to host the project for free - can be multiple platforms/clouds/sites as long as I can hook everything up.
