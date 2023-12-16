@@ -8,4 +8,6 @@ Providers who want to start incorporating AI/ML predictions for treatments into 
 
 I will be working on this project in phases.  It may take more than one phase to produce a valuable web application.  Phase 1 is going to be creating the web application that mocks the EMR form/workflow used for a provider-patient encounter.  I'll do this using <Spring, Flask or Django back end>, < MySQL or PostgreSQL DB >, and < React or Angular with HTML/CSS for the front end >.  I also will be researching EMRs for style and experience as well as standards like FHIR to implement.  
 
+See the [STRATEGY_README.md](https://github.com/mikerly131/serveUpRecos/blob/main/STRATEGY-README.md) for more detailed information on architecture and phased development plan.
+
 Extensions or future phases of this project might add functionality like a second web form to capture success or failure of treatment, with subsequent build out spark jobs to processes that data with recommendation data and then feed output to the analytical dashboard.  Another job could then find and use the best recommendations and outcomes to prepare data for retraining the model and yet another job could train it.
