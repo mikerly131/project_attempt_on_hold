@@ -1,6 +1,6 @@
 # Passion Project: serveUpRecos
 
-###serveUpRecos is a web application that mocks a workflow for a provider and patient in a Health Care System, called an encounter, and serves up a treatment recommendation as predicted by an AI model for a specific diagnosis.  
+### serveUpRecos is a web application that mocks a workflow for a provider and patient in a Health Care System, called an encounter, and serves up a treatment recommendation as predicted by an AI model for a specific diagnosis.  
 
 The web application will gather patient and provider information to populate a mocked web form a provider would use during the encounter.  A user or simulated user has the role of provider and will select diagnosis for the patient.  The diagnosis will be sent to a ML model trained to serve treatment recommendations for a prediction of the best treatment to apply for the given diagnosis and patient.  The provider then has the ability to take and use the recommendation or ignore it.  The encounter is then ended and data from it is staged for analytical dashboards.
 
