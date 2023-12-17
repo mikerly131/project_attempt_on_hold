@@ -1,3 +1,4 @@
+I am a novice and I'm still learning, this will be a fun and tough challenge.
 
 Learn about Epic, Cerner and maybe a few other EMR systems, their main workflows and apps/forms/sites.  Understand some of the EMR ecosystem tech and where its going.
 Learn about JHipster and PyHipster, mess around with them trying to spin up application using them.  
