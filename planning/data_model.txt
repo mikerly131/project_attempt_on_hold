@@ -1,0 +1,19 @@
+Getting the Resources/Objects from FHIR specification.
+HealthCare EMR Systems like Epic and Cerner have their APIs or will convert their APIs to use these specifications
+
+Might want to break this up, have a data model for each phase.
+Might also want to break up and have different DBs - a data model for the "EMR system" and one for the "model"
+
+Entities:
+    Encounter -
+    Condition -  might be called Problem in Epic implementation, need to verify.
+    Diagnosis -
+    Patient
+    Provider - not sure if clinician is same or a child resource of Provider.
+    Predictions -
+    Outcomes -
+    ML Model -
+    Training Data -
+    Test Data-
+
+Encounter:

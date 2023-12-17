@@ -1,0 +1,139 @@
+{
+"resourceType": "Encounter",
+"id": "ej5R7X.4RdaFNR5vWdsTpVTtccmkRkWJcKixc5XVY4cQ3",
+"identifier": [
+{
+"use": "usual",
+"system": "urn:oid:1.2.840.114350.1.13.861.1.7.3.698084.8",
+"value": "10000172757"
+}
+],
+"status": "in-progress",
+"class": {
+"system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+"code": "3",
+"display": "Admission"
+},
+"type": [
+{
+"coding": [
+{
+"system": "urn:oid:1.2.840.114350.1.13.861.1.7.10.698084.10110",
+"code": "1",
+"display": "Inpatient"
+}
+],
+"text": "Inpatient"
+},
+{
+"coding": [
+{
+"system": "urn:oid:1.2.840.114350.1.13.861.1.7.10.698084.30",
+"code": "3",
+"display": "Hospital Encounter"
+}
+],
+"text": "Hospital Encounter"
+}
+],
+"subject": {
+"reference": "Patient/ej4nFxzySJAysjMuv4rTBNA3",
+"display": "Some One Jr., MD"
+},
+"participant": [
+{
+"type": [
+{
+"coding": [
+{
+"system": "http://hl7.org/fhir/v3/ParticipationType",
+"code": "ADM",
+"display": "admitter"
+}
+],
+"text": "admitter"
+}
+],
+"individual": {
+"reference": "Practitioner/e89p8GCwg7wvke-vxglQ0WA3",
+"display": "Firstname Lastname, MD"
+}
+},
+{
+"type": [
+{
+"coding": [
+{
+"system": "urn:oid:1.2.840.114350.1.13.861.1.7.10.698084.18869",
+"code": "PRIMARY TEAM",
+"display": "Primary Team"
+}
+],
+"text": "Primary Team"
+}
+],
+"individual": {
+"reference": "Practitioner/ef81ZrgFqs7ufzYI2X9ixcA3",
+"display": "Starter Provider"
+}
+},
+{
+"type": [
+{
+"coding": [
+{
+"system": "urn:oid:1.2.840.114350.1.13.861.1.7.10.698084.18869",
+"code": "RESIDENT",
+"display": "Resident"
+}
+],
+"text": "Resident"
+}
+],
+"period": {
+"start": "2018-12-11T16:25:07Z",
+"end": "2018-12-11T19:59:58Z"
+},
+"individual": {
+"reference": "Practitioner/eiVBeBC8II315L5R4HrIQNg3",
+"display": "Firstname Lastname, MD | RN"
+}
+}
+],
+"period": {
+"start": "2018-10-02T20:58:24Z"
+},
+"reasonCode": [
+{
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "25064002",
+"display": "Headache (finding)"
+}
+],
+"text": "Headache"
+},
+{
+"coding": [
+{
+"system": "http://snomed.info/sct",
+"code": "422587007",
+"display": "Nausea (finding)"
+}
+],
+"text": "Nauseous"
+}
+],
+"location": [
+{
+"location": {
+"reference": "Location/eMRHhr1Ry-G-RV0fqAju6kA3",
+"display": "Initial Department"
+},
+"period": {
+"start": "2018-10-02T20:58:00Z"
+}
+}
+]
+}

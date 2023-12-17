@@ -8,7 +8,7 @@ I think this will be a 3-tier web-app architecture.
 
 Research/Get Help:  I am not sure yet how to describe the other applications that will be involved.  I believe they are either part of the Application tier or their own tier, depending on implementation (spark app, ml model).  
 
-<img src="./tsa_first_draft.png" width="720" height="720">
+<img src="./images/tsa_first_draft.png" width="720" height="720">
 
 ### Tier 1: Presentation 
 #### Plan:
@@ -93,11 +93,7 @@ Same as plan right now.
 
 ## Phase 1:  Web app that simulates an EMR workflow / form for an "Encounter".
 
-<img src="./phase_1_3-tier.png" width="680" height="680">
-
-## Phase 1 - Alternative:  Generate Mock FHIR Messages, Process for ML and/or Analytics
-
-<img src="./alt_phase_1.png" width="680" height="680">
+<img src="./images/phase_1_3-tier.png" width="680" height="680">
 
 Looking at PyHipster and JHipster to easily spin up a web app framework ->  web server backend, data model, services and front-end with main (a template) site
 JHipster will be used to setup Sprint backend, React or Angular front end.  PyHistper would give us Flask or Django I believe, with React front end.
@@ -108,8 +104,22 @@ Tier 2: App - Spring or Flask or Django, something easy to setup and build REST 
 Tier 3: Data -  Whatever is needed for the web-form in PostgreSQL or MySQL (mocked patient and provider info, mocked predictions, saved encounters, etc.)
 
 I need to select a particular web form or workflow and form to simulate with my web app.  
-Now I'm also thinking I might want to simulate hundreds of web-apps at some point to test real-time data for a whole network of uses.
 
-Learn the data and FHIR specification that should be used with that web form.  Work out a phase 1 data model from there.
+Learn the data and FHIR specification that should be used with that web form.  
+Work out a phase 1 data model from there.
 I want to then spin use PyHipster or JHipster to create the web app.
+Or, maybe there is an alternative that is better to start with...
+
+## Phase 1 - Alternative:  Generate Mock FHIR standard Messages, Process for ML and/or Analytics
+
+<img src="./images/alt_phase_1.png" width="680" height="680">
+
+Maybe I create the event-based data streaming first.  
+Setup Kafka, Spark App, and web app to generate events.
+Generate events to Kafka topics, spark consumes them and transforms before landing in DB or another Topic.
+Events for specific triggers in a workflow, like CDS Hooks / BPA native or own-defined one.
+Could hook in the AI/ML to the eval of sending the alert...
+Use a BI tool or analytic dashboard to 
+
+
 

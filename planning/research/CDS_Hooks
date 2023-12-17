@@ -1,0 +1,45 @@
+CDS Hooks might be what I need to generate and have the provider facing application handle.
+It is a standard for in-workflow decision support integrations.
+Between a health record system and remote, real-time, provider facing decision support services.
+Epic's support for CDS Hooks is built on a workflow engine and a CDS rule engine.
+
+Idea is orgs can configure native DDS alerts by defining the point/action in a workflow that triggers it.
+This is known as the hook.
+A set of criteria is defined to be evaluated when the hook is triggered.
+The criteria determine if the clinician is shown the CDS alert, and what info it contains.
+Epic's implementation enables native criteria to call a remote CDS Hooks API when evaluating to show a CDS Alert.
+In Epic, the native CDS alert is called a BestPractice Advisory (BPA).
+
+Epic supports 3 standard hooks, built on pre-existing CDS alert workflow triggers.
+They support many more native workflow triggers than CDS Hooks defines with a standard.
+
+Hooks -
+    patient-view:  2 triggers
+        1. When a patient's chart is opened.
+                Epic trigger native name: Open Patient Chart
+                Don't do it every open, have a set of rules and conditions to fire it.
+        2. When a native Epic trigger calls a CDS Hooks service that is not standardized by CDS Hooks.
+                Ex - like Enter Allergy native Epic workflow, orgs can configure to show a BPA, including evaluating criteria that calls CDS Hooks service.
+                Because no standard hook for Enter Allergy workflow, reuse the patient-view hook.
+
+    order-select: Might be multiple different workflows that trigger this.
+        Epic supports it in workflows when clinician enters orders for a patient.
+        The draftOrders JSON object contains a bundle of both the newly selected orders and the previously selected, unsigned orders.
+        Decision support using this hook should focus on the newly selected orders.
+        The draftOrders bundle can contain the MedicationRequest, ServiceRequest, or ProcedureRequest resource.
+
+    order-sign: Triggered as final step in the ordering process.
+        Occurs when clinician has clicked the Sign Orders butto, but before system finalizes the order.
+        Decision support from this hook is the final chance for the clinician to revise orders.
+        Hook allos for collection of unsigned order details ot send in the CDS Hooks call as MedicationRequest, ServiceRequest, or ProcedureRequest.
+
+Types of content to response with:
+    - textual information
+    - suggest actions to be taken such as adding diagnoses
+    - links to your application or other web sites (probably don't do this one for this project)
+
+So in essence, if I want to serve up recommendations from an ML model with some rules, I could create a CDS service and serve them up as BPAs.
+    Unless there is something designed specifically for my use case.
+
+reference: https://fhir.epic.com/Documentation?docId=cds-hooks
+

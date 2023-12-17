@@ -1,0 +1,450 @@
+Example JSON body for an HTTP request (I believe)
+
+{
+  "hookInstance": "f399c67c-c703-11ea-af16-460231621f93",
+  "fhirServer": "https://example.com/interconnect-instance-oauth/api/FHIR/R4",
+  "hook": "patient-view",
+  "fhirAuthorization": {
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1cm46ZXBpYzpjZWMuY2RlIiwiY2xpZW50X2lkIjoiYWVhYzNkYTctNjQ4MS00NWFmLWFkNDEtNDJlNWU3MDExNDFkIiwiZXBpYy5lY2kiOiJ1cm46ZXBpYzpDdXJyZW50LURldmVsb3BtZW50LUVudmlyb25tZW50IiwiZXBpYy5tZXRhZGF0YSI6Ik4yTDdoSFE3clNxLXdQbkstcVMyZlBTSjY1Q1EzS1ZOVHhhTUlBZGRVTllwemQyOEE0Q2d4ZHA0SVg0NUI5YmE4TVVJdEl1NkEzYjBkYmU1c1ZlY093V1ZZN0tTd2VZb09KZDR5R2hmblcxdk9yOENoX195N2NrT1VtV005cnVhIiwiZXBpYy50b2tlbnR5cGUiOiJhY2Nlc3MiLCJleHAiOjE1OTQ4NjMzMzcsImlhdCI6MTU5NDg2MzAzNywiaXNzIjoidXJuOmVwaWM6Y2VjLmNkZSIsImp0aSI6ImU4MjFhMDA5LTgzNjAtNDRkYy1iZmMwLTEyZmU4ODA3MjQyYSIsIm5iZiI6MTU5NDg2MzAzNywic3ViIjoiZUJxZ0Foc2pVcHF3a3lJWm9LZU1jVUEzIn0.hF2Ir9717QxJ0TgiFXKN1bhRdicgUHEf_0tjZ7qiy2Enzsn7_dW4HaueJqg22vcnrEayLxlW4h6Q6J5He3-U7VXmGBFd5AKXxVLbTQZupN6x4owt5n_N1OJKDu5UVJdlWoq-fBVn2sEyDfvITQ-BK21MWXxGaEcnttJNxS0Mk847JnxBby2oLzAd5NnIbdT733S2nL36ViK_mVnkucLu4vxwVRcaec2zCpvqF8Pn2Crl3yKaPKQbRqc6y12hprdUeB2VxOm3H5KxJQKYnEGTKNCmCy5w3Yaz86KtP9OlX1e3n6Km3TSCtZbj0Gm7QIVyDARAlREPA_XzbgQ3ItJang",
+    "token_type": "Bearer",
+    "expires_in": 300,
+    "scope": "ALLERGYINTOLERANCE.READ ALLERGYINTOLERANCE.SEARCH Observation.Read (Smoking History) Observation.Read (Labs) (R4) Observation.Read (Vitals) Observation.Read (Vitals) (R4) Observation.Search (Labs) (R4) Observation.Search (Smoking History) Observation.Search (Vitals) Observation.Search (Vitals) (R4) Practitioner.Read (R4) Practitioner.Search (DSTU2) PROCEDURE.READ PROCEDURE.SEARCH MedicationRequest.Read (R4) MedicationRequest.Search (R4) CONDITION.READ CONDITION.SEARCH Condition.Read (R4) Condition.Search (R4) PATIENT.READ PATIENT.SEARCH PRACTITIONER.READ PRACTITIONER.SEARCH OBSERVATION.READ OBSERVATION.SEARCH urn:Epic-com:Informatics.2014.Services.Order.AnnotateOrders AllergyIntolerance.Search (R4) AllergyIntolerance.Read (R4) Patient.Read (R4) Patient.Search (R4) Location.Read (R4) Encounter.Read (R4) Encounter.Search (R4) urn:Epic-com:Core.2016.Services.DataUtility.GetImportDataLog Condition.Create (R4) Medication.Read (R4) MEDICATION.READ (DSTU2) MEDICATION.READ MEDICATIONORDER.READ MEDICATIONORDER.READ (DSTU2) MEDICATIONORDER.SEARCH MEDICATION.SEARCH MedicationStatement.Read (R4) MEDICATIONSTATEMENT.READ (DSTU2) MEDICATIONSTATEMENT.READ MEDICATIONSTATEMENT.SEARCH MedicationStatement.Search (R4) Condition.Search (R4) Patient.Read (R4) Practitioner.Read (R4) Patient.Search (R4) Practitioner.Search (R4) Condition.Read (R4) Condition.Create (R4) AllergyIntolerance.Read (R4) AllergyIntolerance.Search (R4) Observation.Read (R4) Observation.Search (R4) Practitioner.Search (R4) PractitionerRole.Search (R4) PractitionerRole.Search (R4) medication medication.create Encounter.Read (R4) Encounter.Search (R4) ProcedureRequest.Read (R4) ProcedureRequest.Search (R4) EPIC.FHIR.R4.SERVICES.MEDICATIONREQUEST.CREATE EPIC.FHIR.R4.SERVICES.MEDICATIONREQUEST.CREATE Condition.Create (Encounter Diagnosis) (R4) Condition.Create (Problems) (R4) EPIC.FHIR.R4.SERVICES.PROCEDUREREQUEST.CREATE EPIC.FHIR.R4.SERVICES.SERVICEREQUEST.CREATE Condition.Read (Encounter Diagnosis) (R4) Condition.Read (Health Concern) (R4) Condition.Read (Problems) (R4) Condition.Search (Encounter Diagnosis) (R4) Condition.Search (Health Concern) (R4) Condition.Search (Problems) (R4) Observation.Read (Core Characteristics) (R4) Observation.Read (Labs) (R4) Observation.Read (LDA-W) (R4) Observation.Read (Obstetric Details) (R4) Observation.Read (Smoking History) (R4) Observation.Read (Vitals) (R4) Observation.Search (Core Characteristics) (R4) Observation.Search (Labs) (R4) Observation.Search (LDA-W) (R4) Observation.Search (Obstetric Details) (R4) Observation.Search (Smoking History) (R4) Observation.Search (Vitals) (R4) MedicationRequest.Read (R4) MedicationRequest.Search (R4) condition.create(diagn Condition.Create Problem (R4) PractitionerRole.Read (R4) PractitionerRole.Read (R4)",
+    "subject": "aeac3da7-6481-45af-ad41-42e5e701141d"
+  },
+  "context": {
+    "patientId": "eXoGxqgBaJuNkuahMYmiDhg3",
+    "encounterId": "eFyoeOuWgXtlQmOQzPdkQWwy3s8a49yrUc-LtjwhWT6g3",
+    "userId": "PractitionerRole/e-QokEGUJIzyynNdkCFrs9w3"
+  },
+  "prefetch": {
+    "-user": {
+      "resourceType": "PractitionerRole",
+      "id": "e-QokEGUJIzyynNdkCFrs9w3",
+      "active": true,
+      "practitioner": {
+        "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Practitioner/eqZb1t82mP4YeBjiLldSFPQ3",
+        "display": "Family Medicine Physician"
+      },
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.861.1.7.10.836982.1040",
+              "code": "1",
+              "display": "Physician"
+            }
+          ],
+          "text": "Physician"
+        }
+      ],
+      "specialty": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.688867.4160",
+              "code": "10",
+              "display": "Cardiology"
+            }
+          ],
+          "text": "Cardiology"
+        },
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.688867.4160",
+              "code": "5",
+              "display": "Anesthesiology"
+            }
+          ],
+          "text": "Anesthesiology"
+        },
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.688867.4160",
+              "code": "15",
+              "display": "Dermatology"
+            }
+          ],
+          "text": "Dermatology"
+        },
+        {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.688867.4160",
+              "code": "18",
+              "display": "Endocrinology"
+            }
+          ],
+          "text": "Endocrinology"
+        }
+      ]
+    },
+    "patient": {
+      "resourceType": "Patient",
+      "id": "eXoGxqgBaJuNkuahMYmiDhg3",
+      "extension": [
+        {
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/us/core/ValueSet/omb-race-category",
+                "code": "UNK",
+                "display": "Unknown"
+              },
+              "url": "ombCategory"
+            },
+            {
+              "valueString": "Unknown",
+              "url": "text"
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+        },
+        {
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category",
+                "code": "UNK",
+                "display": "Unknown"
+              },
+              "url": "ombCategory"
+            },
+            {
+              "valueString": "Unknown",
+              "url": "text"
+            }
+          ],
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+        },
+        {
+          "valueCode": "M",
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "usual",
+          "type": {
+            "text": "EPI"
+          },
+          "system": "urn:oid:1.2.840.114350.1.1",
+          "value": "113822"
+        },
+        {
+          "use": "usual",
+          "type": {
+            "text": "EXTERNAL"
+          },
+          "value": "Z16282"
+        },
+        {
+          "use": "usual",
+          "type": {
+            "text": "FHIR"
+          },
+          "value": "TDjw8.slp7UtBKr3jNvYPsSGUb0qoZMC5OEhD5iu5ticB"
+        },
+        {
+          "use": "usual",
+          "type": {
+            "text": "FHIR R4"
+          },
+          "value": "eXoGxqgBaJuNkuahMYmiDhg3"
+        },
+        {
+          "use": "usual",
+          "type": {
+            "text": "INTERNAL"
+          },
+          "value": "    Z16282"
+        },
+        {
+          "use": "usual",
+          "system": "urn:oid:2.16.840.1.113883.4.1"
+        }
+      ],
+      "active": true,
+      "name": [
+        {
+          "use": "official",
+          "text": "Family Medicine Physician",
+          "family": "Physician",
+          "given": [
+            "Family Medicine"
+          ]
+        },
+        {
+          "use": "usual",
+          "text": "Family Medicine Physician",
+          "family": "Physician",
+          "given": [
+            "Family Medicine"
+          ]
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1981-06-24",
+      "deceasedBoolean": false,
+      "managingOrganization": {
+        "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Organization/e1aU.Joccsz0IPnyexqMjXw3",
+        "display": "EXAMPLE ORGANIZATION"
+      }
+    },
+    "conditions": {
+      "resourceType": "Bundle",
+      "type": "searchset",
+      "total": 0,
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Condition?patient=eXoGxqgBaJuNkuahMYmiDhg3&_include=Condition:patient&_include=Condition:patient:organization"
+        }
+      ],
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "warning",
+                "code": "processing",
+                "details": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.861.1.7.2.657369",
+                      "code": "4101",
+                      "display": "Resource request returns no results."
+                    }
+                  ],
+                  "text": "Resource request returns no results."
+                }
+              }
+            ]
+          },
+          "search": {
+            "mode": "outcome"
+          }
+        }
+      ]
+    },
+    "medications": {
+      "resourceType": "Bundle",
+      "type": "searchset",
+      "total": 2,
+      "link": [
+        {
+          "relation": "self",
+          "url": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/MedicationRequest?patient=eXoGxqgBaJuNkuahMYmiDhg3"
+        }
+      ],
+      "entry": [
+        {
+          "link": [
+            {
+              "relation": "self",
+              "url": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/MedicationRequest/e4jAeTRRFdgN-QzpjNRbwQkDnp1BQlqrukNdC6BvYzU43"
+            }
+          ],
+          "fullUrl": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/MedicationRequest/e4jAeTRRFdgN-QzpjNRbwQkDnp1BQlqrukNdC6BvYzU43",
+          "resource": {
+            "resourceType": "MedicationRequest",
+            "id": "e4jAeTRRFdgN-QzpjNRbwQkDnp1BQlqrukNdC6BvYzU43",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.861.1.7.2.798268",
+                "value": "1000182255"
+              }
+            ],
+            "status": "active",
+            "intent": "order",
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-request-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            },
+            "medicationReference": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Medication/ehjM3OtjgdW8Bea3jIQgMFVhzPMcMELCBS5v775xzbLetNaOP5vZRG-7BUwFy1hYFzJ7rXwELBf63P6zbB4tI56DXbUTYtEZEWyFIzxmyONE3",
+              "display": "IBUPROFEN 200 MG PO TABS"
+            },
+            "subject": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Patient/eXoGxqgBaJuNkuahMYmiDhg3",
+              "display": "Physician, Family Medicine"
+            },
+            "authoredOn": "2020-07-06T20:25:56Z",
+            "recorder": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Practitioner/eqZb1t82mP4YeBjiLldSFPQ3",
+              "display": "Family Medicine Physician"
+            },
+            "dosageInstruction": [
+              {
+                "extension": [
+                  {
+                    "valueQuantity": {
+                      "value": 2,
+                      "unit": "tablet",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "{tbl}"
+                    },
+                    "url": "https://open.epic.com/fhir/extensions/admin-amount"
+                  },
+                  {
+                    "valueQuantity": {
+                      "value": 400,
+                      "unit": "mg",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "mg"
+                    },
+                    "url": "https://open.epic.com/fhir/extensions/ordered-dose"
+                  }
+                ],
+                "timing": {
+                  "repeat": {
+                    "boundsPeriod": {
+                      "start": "2020-07-06T20:25:32Z"
+                    },
+                    "frequency": 1,
+                    "period": 6,
+                    "periodUnit": "h"
+                  },
+                  "code": {
+                    "text": "Q6H PRN"
+                  }
+                },
+                "asNeededBoolean": true,
+                "route": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.861.1.7.4.798268.7025",
+                      "code": "15",
+                      "display": "Oral"
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "260548002",
+                      "display": "Oral"
+                    }
+                  ],
+                  "text": "Oral"
+                },
+                "doseQuantity": {
+                  "value": 400,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          },
+          "search": {
+            "mode": "match"
+          }
+        },
+        {
+          "link": [
+            {
+              "relation": "self",
+              "url": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/MedicationRequest/es5s.w.VqTbI-3sTtgDY0f.oJSZ8leYTXykPvcBCZrWQ3"
+            }
+          ],
+          "fullUrl": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/MedicationRequest/es5s.w.VqTbI-3sTtgDY0f.oJSZ8leYTXykPvcBCZrWQ3",
+          "resource": {
+            "resourceType": "MedicationRequest",
+            "id": "es5s.w.VqTbI-3sTtgDY0f.oJSZ8leYTXykPvcBCZrWQ3",
+            "identifier": [
+              {
+                "use": "usual",
+                "system": "urn:oid:1.2.840.114350.1.13.861.1.7.2.798268",
+                "value": "1000182291"
+              }
+            ],
+            "status": "active",
+            "intent": "order",
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/medication-request-category",
+                  "code": "inpatient",
+                  "display": "Inpatient"
+                }
+              ],
+              "text": "Inpatient"
+            },
+            "medicationReference": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Medication/eIBy3xFZsuXmpUpNLdojkXC2jhRNQyq0NyjvMBlrASIS4dl.7I3naftOtzE1KVToZwnuJ5ty7Zonwkhzz9kHIeEYjUV102TvDEv7zaGJFkKQ3",
+              "display": "MITOMYCIN 40 MG IV SOLR"
+            },
+            "subject": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Patient/eXoGxqgBaJuNkuahMYmiDhg3",
+              "display": "Physician, Family Medicine"
+            },
+            "authoredOn": "2020-07-06T20:40:24Z",
+            "recorder": {
+              "reference": "https://example.com/interconnect-instance-oauth/api/FHIR/R4/Practitioner/eqZb1t82mP4YeBjiLldSFPQ3",
+              "display": "Family Medicine Physician"
+            },
+            "dosageInstruction": [
+              {
+                "extension": [
+                  {
+                    "valueQuantity": {
+                      "value": 10,
+                      "unit": "mg",
+                      "system": "http://unitsofmeasure.org",
+                      "code": "mg"
+                    },
+                    "url": "https://open.epic.com/fhir/extensions/ordered-dose"
+                  }
+                ],
+                "timing": {
+                  "repeat": {
+                    "boundsPeriod": {
+                      "start": "2020-07-06T23:00:00Z"
+                    },
+                    "frequency": 2,
+                    "period": 1,
+                    "periodUnit": "d"
+                  },
+                  "code": {
+                    "text": "0900 & 1800"
+                  }
+                },
+                "asNeededBoolean": false,
+                "route": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.861.1.7.4.798268.7025",
+                      "code": "11",
+                      "display": "Intravenous"
+                    }
+                  ],
+                  "text": "Intravenous"
+                }
+              }
+            ]
+          },
+          "search": {
+            "mode": "match"
+          }
+        }
+      ]
+    }
+  },
+  "extension": {
+    "com.epic.cdshooks.request.bpa-trigger-action": "18",
+    "com.epic.cdshooks.request.cds-hooks-specification-version": "1.0",
+    "com.epic.cdshooks.request.fhir-version": "R4",
+    "com.epic.cdshooks.request.criteria-id": "2852",
+    "com.epic.cdshooks.request.epic-version": "9.4",
+    "com.epic.cdshooks.request.cds-hooks-implementation-version": "1.0",
+    "com.epic.cdshooks.request.cds-hooks-su-version": "0",
+    "internal.epic.cdshooks.request.epic-emp-id": "17805"
+  }
+}
