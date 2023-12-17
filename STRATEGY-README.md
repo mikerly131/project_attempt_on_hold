@@ -97,7 +97,7 @@ Same as plan right now.
 
 ## Phase 1 - Alternative:  Generate Mock FHIR Messages, Process for ML and/or Analytics
 
-<img src="./alt_phase_1.png" width="680 height="680">
+<img src="./alt_phase_1.png" width="680" height="680">
 
 Looking at PyHipster and JHipster to easily spin up a web app framework ->  web server backend, data model, services and front-end with main (a template) site
 JHipster will be used to setup Sprint backend, React or Angular front end.  PyHistper would give us Flask or Django I believe, with React front end.
