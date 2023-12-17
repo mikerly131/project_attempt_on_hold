@@ -1,3 +1,4 @@
 # Ignore idea files for the IDE
 ./idea
 /.idea
+.idea/
