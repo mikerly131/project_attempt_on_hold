@@ -8,6 +8,8 @@ I think this will be a 3-tier web-app architecture.
 
 Research/Get Help:  I am not sure yet how to describe the other applications that will be involved.  I believe they are either part of the Application tier or their own tier, depending on implementation (spark app, ml model).  
 
+<img src="./tsa_first_draft.png" width="720" height="720">
+
 ### Tier 1: Presentation 
 #### Plan:
 JS/HTML/CSS for browser/front-end web app/site.  Probably a site, due to limited time for learning UX.
