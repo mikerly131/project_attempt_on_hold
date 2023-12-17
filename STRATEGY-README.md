@@ -93,6 +93,8 @@ Same as plan right now.
 
 ## Phase 1:  Web app that simulates an EMR workflow / form for an "Encounter".
 
+<img src="./phase_1_3-tier.png" width="680" height="680">
+
 Looking at PyHipster and JHipster to easily spin up a web app framework ->  web server backend, data model, services and front-end with main (a template) site
 JHipster will be used to setup Sprint backend, React or Angular front end.  PyHistper would give us Flask or Django I believe, with React front end.
 
