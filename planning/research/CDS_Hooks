@@ -31,7 +31,7 @@ Hooks -
     order-sign: Triggered as final step in the ordering process.
         Occurs when clinician has clicked the Sign Orders butto, but before system finalizes the order.
         Decision support from this hook is the final chance for the clinician to revise orders.
-        Hook allos for collection of unsigned order details ot send in the CDS Hooks call as MedicationRequest, ServiceRequest, or ProcedureRequest.
+        Hook allows for collection of unsigned order details ot send in the CDS Hooks call as MedicationRequest, ServiceRequest, or ProcedureRequest.
 
 Types of content to response with:
     - textual information
@@ -40,6 +40,12 @@ Types of content to response with:
 
 So in essence, if I want to serve up recommendations from an ML model with some rules, I could create a CDS service and serve them up as BPAs.
     Unless there is something designed specifically for my use case.
+
+"/feedback" - key endpoint for my plan in this FHIR/epic standard for CDS Hooks
+    - Can get real-time or batch of responses sent to this endpoint by...
+            -- the system that calls for CDS hook? need to confirm this
+
+
 
 reference: https://fhir.epic.com/Documentation?docId=cds-hooks
 
