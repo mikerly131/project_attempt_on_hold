@@ -1,0 +1,6 @@
+Has pipelines for creating and training models to perform specific tasks.
+These could be a very powerful and helpful tools if I need to build my own AI model.
+Does not assist with making the model usable in any way - ex. hosting it as an API or something like that.
+Heck it doesn't give any info on how to use the model on incoming data to make predictions at all.
+
+Saved into my

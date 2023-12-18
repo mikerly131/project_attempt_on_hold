@@ -1,0 +1,8 @@
+Found a site appseed that has some configured templates for deploying a flask or django web app.
+Some of them have React/JS front ends, others seem mainly just HTML/CSS and maybe a little JS.
+
+So far I can't get either of the 2 generators/templates that have React/npm/Node components to actually install.
+Throws all sorts of errors and its taking longer than 30 minutes to debug anything, if it works at all.
+
+Going to go with a front-end that isn't react or angular if I can.  (Pixel or MakeKit seem decent, open source)
+My goal here isn't to become proficient with a garbage script lang like JS or its frameworks.
