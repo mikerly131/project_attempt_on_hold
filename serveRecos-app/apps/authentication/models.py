@@ -11,6 +11,7 @@ from apps.authentication.util import hash_pass
 
 class Users(db.Model, UserMixin):
 
+    # Explicitly define a table name (so its not lowercase with underscores between words)
     __tablename__ = 'Users'
 
     id = db.Column(db.Integer, primary_key=True)

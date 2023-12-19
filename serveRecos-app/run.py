@@ -28,6 +28,7 @@ except KeyError:
 app = create_app(app_config)
 Migrate(app, db)
 
+# This minimizes the storage of the code itself I believe, like removing spaces.
 if not DEBUG:
     Minify(app=app, html=True, js=False, cssless=False)
     
@@ -37,5 +38,6 @@ if DEBUG:
     app.logger.info('DBMS             = ' + app_config.SQLALCHEMY_DATABASE_URI)
     app.logger.info('ASSETS_ROOT      = ' + app_config.ASSETS_ROOT )
 
+# Runs the app on dev server if run.py executed local/direct
 if __name__ == "__main__":
     app.run()

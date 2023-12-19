@@ -48,9 +48,13 @@ def configure_database(app):
         db.session.remove() 
 
 
+# This here is hte factory function, our app factory...I believe
 def create_app(config):
+    # Creates a Flask app instance, named app
     app = Flask(__name__)
+    # Config for app from passed config object
     app.config.from_object(config)
+    # Register login manager, db, blueprint(routes), and configure the db
     register_extensions(app)
     register_blueprints(app)
     configure_database(app)

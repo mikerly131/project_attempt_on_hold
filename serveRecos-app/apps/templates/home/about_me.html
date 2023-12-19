@@ -1,0 +1,282 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Profile Page {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main>
+        
+        {% include 'includes/preloader.html' %}
+
+        <!-- My Info -->
+        <div class="section-header bg-primary-app pb-0">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+
+                        <!-- Added my headshot -->
+                        <img src="/static/assets/img/team/hs_mike_riley.jpg" class="rounded-circle img-thumbnail image-lg border-gray-300 p-2" alt="Profile image">
+                        <div class="mt-4 mb-5">
+                            <h1 class="display-2 fw-normal my-4">Hello, I’m Mike Riley.</h1>
+                            <h5 class="fw-normal text-gray">Student at <span class="fw-bold text-dark">Zip Code Wilmington</span></h5>
+                        </div>
+                        <ul class="list-inline text-center mb-0">
+                            <!-- Don't have a twitter, get one for networking
+                            <li class="list-inline-item">
+                                <a class="icon icon-md icon-twitter me-3" data-toggle="tooltip" data-placement="top" title="twitter">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li> -->
+                            <li class="list-inline-item">
+                                <a class="icon icon-md icon-github me-2" data-toggle="tooltip" data-placement="top" title="github">
+                                    <span class="fab fa-github"><a href="https://github.com/mikerly131" target="_blank">mikerly131</a></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="icon icon-md icon-linkedin me-2" data-toggle="tooltip" data-placement="top" title="linkedin">
+                                    <span class="fab fa-linkedin"><a href="www.linkedin.com/in/michaelryanriley" target="_blank">Michael Riley</a></span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="icon icon-md icon-hackerrank me-2" data-toggle="tooltip" data-placement="top" title="hackerrank">
+                                    <span class="fab fa-hackerrank"><a href="https://www.hackerrank.com/profile/mikePractices" target="_blank">mikePractices</a></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of My Info section -->
+
+        <!-- Who I am section -->
+        <section class="section section-lg bg-primary-app pb-0">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="mt-4 mb-5">
+                        <h3 class="display-2 fw-normal my-4">Who I am</h3>
+                        <h5 class="fw-normal text-gray">The most important features of me</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-left text-md-right">
+                        <p class="lead fw-bold text-dark">I have grit and maintain a strong continuity of thought and purpose across many teams, domains, rules and data to deliver enterprise scale projects.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>After more than a decade in fintech as an analyst and then a product manager, I am starting my journey to become a software engineer.  Or maybe I'll end up a data engineer, as long as I'm gaining and proving I have the ability to understand good solutions and code them. </p>
+                        <p class="d-none d-lg-block"> It is some filler stuff for now.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p> More filler stuff for now.</p>
+                        <!--Add my signature at some point  <img class="mt-3" src="/static/assets/img/<add_sig_file.svg>" alt="signature" width="100"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Who I am Section -->
+
+
+        <!-- Experience Section -->
+        <div class="section section-lg bg-primary-app">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center mb-5 mb-lg-6">
+                        <h2 class="display-2 fw-bold">
+                            Experience
+                        </h2>
+                        <p class="lead">Highlights the most important work I have done</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="card bg-white border-gray-300">
+                            <div class="border-bottom px-4 py-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-3 pb-3 pb-md-0">
+                                        <h2 class="h5">JP Morgan Chase</h2>
+                                    </div>
+                                    <div class="col-md-5 pb-2 pb-md-0">
+                                        <h3 class="h5 mb-3">Digital Product Manager</h3>
+                                        <p class="mb-0">Collaborated on defining a new product and business case for the firm.  Defined and implemented many conversations, product features, the data and events produced, and the analytic pipeline and dashboards.</p>
+                                    </div>
+                                    <div class="col-md-4 text-md-right"><span class="badge bg-primary">2018 - 2023</span></div>
+                                </div>
+                            </div>
+                            <div class="border-bottom px-4 py-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-3 pb-3 pb-md-0">
+                                        <h2 class="h5"></h2>
+                                    </div>
+                                    <div class="col-md-5 pb-2 pb-md-0">
+                                        <h3 class="h5 mb-3">Lead Business Systems Analyst</h3>
+                                        <p class="mb-0">Lead analyst and story writer for cross-LOB, multi-team projects to deliver a proprietary digital wallet product: ChasePay. </p>
+                                    </div>
+                                    <div class="col-md-4 text-md-right"><span class="badge bg-primary">2016 - 2018</span></div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-3 pb-3 pb-md-0">
+                                        <h2 class="h5"></h2>
+                                    </div>
+                                    <div class="col-md-5 pb-2 pb-md-0">
+                                        <h3 class="h5 mb-3">Business Systems Analyst</h3>
+                                        <p class="mb-0"> Research, analyze and define a platform for account tokenization to secure transactions in ApplePay, GooglePay and merchant account stores.</p>
+                                    </div>
+                                    <div class="col-md-4 text-md-right"><span class="badge bg-primary">2011 - 2016</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Experience Section -->
+
+        <!-- Section -->
+        <div class="section section-sm bg-primary-app">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 text-center mb-4 mb-md-6">
+                        <h2 class="display-2 fw-bold">
+                            Skills
+                        </h2>
+                        <p class="lead">Valuable things I know, and I will always learn more</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-4 col-md-3 mb-4 mb-md-0">
+                        <ul class="list-unstyled">
+                            <li class="list-item h3 mb-4">Product Management</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Backlog Management, Prioritization</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Agile (Scrum, Kanban) Methodology</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">AI Conversation Design</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">User Journeys and Profiling</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Defining Data, Data Flow/Model and KPIs</li>
+                            <li class="list-item h6 fw-normal text-muted">Business Case Creation</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 mb-4 mb-md-0">
+                        <ul class="list-unstyled">
+                            <li class="list-item h3 mb-4">Development</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Python</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">SQL</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">JSON</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Spark/PySpark</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Kafka</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Flask Framework</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Exploratory Data Analysis / Pandas</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">API Integration</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">HTML</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3">
+                        <ul class="list-unstyled">
+                            <li class="list-item h3 mb-4">Software</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">JIRA, Confluence</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">PyCharm, IntelliJ</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">MySQL, SQL Workbench</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">GitHub</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Terminal</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Postman</li>
+                            <li class="list-item h6 fw-normal mb-3 text-muted">Figma/Gliffy/Draw.io</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Implement at a later date, personal contact info -->
+<!--        <div class="section section-lg bg-primary-app">-->
+<!--            <div class="container">-->
+<!--                <div class="row mb-5 mb-lg-6">-->
+<!--                    <div class="col-12 col-sm-4 text-center">-->
+<!--                        &lt;!&ndash; Visit Box &ndash;&gt;-->
+<!--                        <div class="icon-box mb-4">-->
+<!--                            <div class="icon icon-secondary-app mb-4">-->
+<!--                                <span class="fas fa-map-marker-alt"></span>-->
+<!--                            </div>-->
+<!--                            <h2 class="h5 icon-box-title">Visit me</h2>-->
+<!--                            <span>-->
+<!--                                123 Some Place Way-->
+<!--                                <br>USA, California-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End of Visit Box &ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="col-12 col-sm-4 text-center">-->
+<!--                        &lt;!&ndash; Call Box &ndash;&gt;-->
+<!--                        <div class="icon-box mb-4">-->
+<!--                            <div class="icon icon-secondary-app mb-4">-->
+<!--                                <span class="fas fa-phone-volume"></span>-->
+<!--                            </div>-->
+<!--                            <h2 class="h5 icon-box-title">Call</h2>-->
+<!--                            <span>+1234567890</span>-->
+<!--                            <div class="text-small text-gray">-->
+<!--                                Mon - Fri, 8am - 4pm-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End of Call Box &ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="col-12 col-sm-4 text-center">-->
+<!--                        &lt;!&ndash; Email Box &ndash;&gt;-->
+<!--                        <div class="icon-box mb-4">-->
+<!--                            <div class="icon icon-secondary-app mb-4">-->
+<!--                                <span class="far fa-paper-plane"></span>-->
+<!--                            </div>-->
+<!--                            <h2 class="h5 icon-box-title">Email</h2>-->
+<!--                            <a href="#">something@something.com</a>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End of Email Box &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-12 col-md-10 text-center mb-4">-->
+<!--                        <h2>Want to work with me?</h2>-->
+<!--                        <p>Cool! Let’s talk about your project</p>-->
+<!--                    </div>-->
+<!--                    <div class="col-12 col-lg-8">-->
+<!--                        <form action="#">-->
+<!--                            &lt;!&ndash; Form &ndash;&gt;-->
+<!--                            <div class="mb-4">-->
+<!--                                <label for="name">Your Name</label>-->
+<!--                                <div class="input-group">-->
+<!--                                    <span class="input-group-text" id="basic-addon3"><span class="fas fa-user-circle"></span></span>-->
+<!--                                    <input type="text" class="form-control" placeholder="e.g. Bonnie Green" id="name" required>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; End of Form &ndash;&gt;-->
+<!--                            &lt;!&ndash; Form &ndash;&gt;-->
+<!--                            <div class="mb-4">-->
+<!--                                <label for="email">Your Email</label>-->
+<!--                                <div class="input-group">-->
+<!--                                    <span class="input-group-text" id="basic-addon4"><span class="fas fa-envelope"></span></span>-->
+<!--                                    <input type="email" class="form-control" placeholder="example@company.com" id="email" required>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; End of Form &ndash;&gt;-->
+<!--                            <div class="mb-4">-->
+<!--                                <label for="message">Your Message</label>-->
+<!--                                <textarea placeholder="Your message" class="form-control" id="message" rows="4" required></textarea>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; End of Form &ndash;&gt;-->
+<!--                            <div class="d-grid">-->
+<!--                                <button type="submit" class="btn rounded btn-secondary">Send message</button>-->
+<!--                            </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,11 +1,9 @@
-Getting the Resources/Objects from FHIR specification.
-HealthCare EMR Systems like Epic and Cerner have their APIs or will convert their APIs to use these specifications
+Target State
 
+API will be sending JSON messages that contain Resources/Objects and their associated data from FHIR specification.
+Data Model will need to support translation between data in transit and data at rest if I capture the data in a different specification.
 
-
-
-
-
+Phase Approach
 
 Might want to break this up, have a data model for each phase.
 Might also want to break up and have different DBs - a data model for the "EMR system" and one for the "model"
