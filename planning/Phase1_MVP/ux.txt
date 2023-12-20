@@ -1,6 +1,8 @@
+Phase 1 - MVP
+
 UI Components for Whole Site
     Breadcrumbs:  maybe, shows paths, like that.
-    Navs:  maybe use these too?
+    Navs:  maybe use these too? isn't this in the navigation.html?
 
 UI Components for Drug-Drug Interaction
     Forms (JS?): Will need to capture new drugs to prescribe/request.
@@ -9,7 +11,7 @@ UI Components for Drug-Drug Interaction
     Buttons:  Probably will use several times, vary patterns
     Dropdowns:  Use these for selections of lists with 6 or less items to pick from.
     Modals (Button Extension?)
-    Pagination: to allow paging, if necessary...
+    Pagination: to allow paging, if necessary...maybe this form is a 2 pager at some point
 
 Display Elements
     Encounter:
@@ -33,6 +35,6 @@ Display Elements
             Dosage Frequency
             Dosage Duration
     Medication Request:
-        Decide MVP info to use.
+        Decide MVP info to use
 
 
