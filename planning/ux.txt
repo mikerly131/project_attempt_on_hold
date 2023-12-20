@@ -1,0 +1,38 @@
+UI Components for Whole Site
+    Breadcrumbs:  maybe, shows paths, like that.
+    Navs:  maybe use these too?
+
+UI Components for Drug-Drug Interaction
+    Forms (JS?): Will need to capture new drugs to prescribe/request.
+    Card: displays stock photo - patient
+    Carousel: Patient info? maybe
+    Buttons:  Probably will use several times, vary patterns
+    Dropdowns:  Use these for selections of lists with 6 or less items to pick from.
+    Modals (Button Extension?)
+    Pagination: to allow paging, if necessary...
+
+Display Elements
+    Encounter:
+        ID
+        Datetime
+        Workflow
+        Page
+    Provider:
+        Username
+        Title
+    Patient:
+        Photo (jpg?)
+        Name:
+            Given Name
+            Middle Name
+            Family Name
+        Patient Medications (0 to Many):
+            Common Name
+            Pharmacological Name
+            Dosage Amount
+            Dosage Frequency
+            Dosage Duration
+    Medication Request:
+        Decide MVP info to use.
+
+
