@@ -30,5 +30,27 @@ Relationships:
         Prediction can contain one or more adverse warnings
     Medication Request has 0 to 1 Medication Order
 
-
+Attributes:
+    Encounter:
+        ID
+        Datetime
+        Workflow
+        Page
+    Provider:
+        Username
+        Title
+    Patient:
+        Photo (jpg?)
+        Name:
+            Given Name
+            Middle Name
+            Family Name
+        Patient Medications (0 to Many):
+            Common Name
+            Pharmacological Name
+            Dosage Amount
+            Dosage Frequency
+            Dosage Duration
+    Medication Request:
+        Decide MVP info to use
 
